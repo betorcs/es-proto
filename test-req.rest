@@ -1,0 +1,56 @@
+PUT localhost:8085/people
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Joe",
+    "birthday": "1990-11-21",
+    "games": [
+        "Clash of Clans",
+        "Clash Royale"
+    ]
+}
+###
+PUT localhost:8085/people
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Bob",
+    "birthday": "1910-01-21",
+    "games": [
+        "CS:GO",
+        "Clash Royale"
+    ]
+}
+###
+PUT localhost:8085/people
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "John",
+    "birthday": "2020-10-10",
+    "games": [
+        "CS:GO",
+        "8 Balls"
+    ]
+}
+
+###
+GET localhost:8085/people/list
+###
+GET localhost:8085/people/1
+###
+GET localhost:8085/people/games/8+balls
+###
+POST localhost:8085/games/rename
+
+{
+    "oldName": "8 Balls",
+    "newName": "8 Ball Pool"
+}
+
+### 

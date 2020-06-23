@@ -1,0 +1,3 @@
+app/vendor/
+supervisord.pid
+supervisord.log
