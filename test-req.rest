@@ -1,3 +1,7 @@
+GET localhost:8085/create
+
+###
+
 PUT localhost:8085/people
 Accept: application/json
 Content-Type: application/json
@@ -6,6 +10,10 @@ Content-Type: application/json
     "id": 1,
     "name": "Joe",
     "birthday": "1990-11-21",
+    "location": {
+        "type": "point",
+        "coordinates": [-22.3423128, -49.0940508]
+    },
     "games": [
         "Clash of Clans",
         "Clash Royale"
@@ -20,6 +28,10 @@ Content-Type: application/json
     "id": 2,
     "name": "Bob",
     "birthday": "1910-01-21",
+    "location": {
+        "type": "point",
+        "coordinates": [-22.3422128, -49.091508]
+    },
     "games": [
         "CS:GO",
         "Clash Royale"
@@ -33,6 +45,10 @@ Content-Type: application/json
     "id": 3,
     "name": "John",
     "birthday": "2020-10-10",
+    "location": {
+        "type": "point",
+        "coordinates": [-21.2345, -43.343533]
+    },
     "games": [
         "CS:GO",
         "8 Balls"

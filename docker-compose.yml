@@ -2,9 +2,9 @@ version: "2.2"
 services:
 
   webapp:
-    build: ./web
+    build: ./docker
     volumes: 
-      - ../app:/var/www:delegated
+      - ./app:/var/www:delegated
     ports: 
       - "8085:80"
     links: 

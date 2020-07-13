@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome to Symfony!</title>
+    </head>
+    <body>
+        <h1>New Person</h1>
+
+        <form action="{{ path('create') }}" method="POST">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="person[name]" id="name" />
+            </div>
+            <div>
+                <label for="birthday">Birthday</label>
+                <input type="date" name="birthday" id="birthday" />
+            </div>
+            <div>
+                <label for="location_lat">Latitude</label>
+                <input type="number" name="location.lat" id="location_lat" />
+            </div>
+            <div>
+                <label for="location_lon">Longitude</label>
+                <input type="number" name="location.lon" id="location_lon" />
+            </div>
+            <button type="submit">Send</button>
+        </form>
+
+        
+    </body>
+</html>

@@ -18,10 +18,20 @@ RUN apk add --no-cache \
     php7-ctype \
     php7-curl \
     php7-dom \
+    php7-mbstring \
+    php7-xdebug \
+    php7-pdo \
+    php7-xmlwriter \
     curl \
     nginx \
     php7-session \
     supervisor
+
+# XDEBUG
+RUN echo "zend_extension=xdebug.so" > /etc/php7/conf.d/00_xdebug.ini
+RUN echo "xdebug.remote_enable = 1" >> /etc/php7/conf.d/00_xdebug.ini
+RUN echo "xdebug.remote_autostart = 1" >> /etc/php7/conf.d/00_xdebug.ini
+RUN echo "xdebug.remote_host = host.docker.internal" >> /etc/php7/conf.d/00_xdebug.ini
 
 RUN mkdir -p /run/nginx
 

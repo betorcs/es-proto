@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome to Symfony!</title>
+    </head>
+    <body>
+        <h1>Directory</h1>
+
+        <a href="{{ path('person_form')}}">new</a>
+
+        {% if people %}
+            {% for person in people %}
+                <p>{{person.name}}</p>
+            {% endfor %}
+        {% else %}
+            Empty
+        {% endif %}
+
+        
+    </body>
+</html>
