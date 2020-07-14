@@ -1,0 +1,7 @@
+# exposed ports
+ports:
+- port: 8085
+  onOpen: open-preview
+# start up tasks
+tasks:
+- init: composer install  
