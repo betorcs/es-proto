@@ -4,4 +4,4 @@ ports:
   onOpen: open-preview
 # start up tasks
 tasks:
-- init: composer install  
+- init: composer install -d app/
